@@ -1,0 +1,25 @@
+{
+  "400390773159231488": {
+    "userId": "400390773159231488",
+    "userName": "exemple_utilisateur",
+    "created": "2025-01-01T00:00:00.000Z",
+    "lastUpdate": "2025-01-01T00:00:00.000Z",
+    "identity": {
+      "facts": [],
+      "preferences": [],
+      "dislikes": []
+    },
+    "relationships": {
+      "people": [],
+      "context": []
+    },
+    "timeline": {
+      "important_events": [],
+      "recent_topics": []
+    },
+    "emotions": {
+      "mood_history": [],
+      "triggers": []
+    }
+  }
+}

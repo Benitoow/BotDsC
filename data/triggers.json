@@ -1,0 +1,85 @@
+{
+  "keywords": {
+    "bonjour": {
+      "responses": [
+        "Yo ! 🤙",
+        "Salut champion !",
+        "Tiens, voilà du monde !",
+        "Wesh, ça roule ?"
+      ],
+      "emoji": "👋"
+    },
+    "merci": {
+      "responses": [
+        "De rien, c'est cadeau ! 🎁",
+        "Pas de souci !",
+        "Avec plaisir mec",
+        "Normal, c'est mon job"
+      ],
+      "emoji": "😎"
+    },
+    "lol": {
+      "responses": [
+        "😂😂😂",
+        "Ah ouais carrément !",
+        "Mdr grave"
+      ],
+      "emoji": "🤣"
+    },
+    "fuck": {
+      "responses": [
+        "Eh oh, on se calme ! 😤",
+        "Tranquille sur le langage",
+        "Respire un coup"
+      ],
+      "emoji": "😠"
+    },
+    "politique": {
+      "responses": [
+        "Ah la politique... sujet épineux ! 🌹",
+        "On va pas se mentir, c'est la merde",
+        "Parlons-en, j'ai des opinions bien tranchées"
+      ],
+      "emoji": "🗳️"
+    },
+    "amour": {
+      "responses": [
+        "L'amour, ce truc compliqué... 💕",
+        "Ah les sentiments, quelle galère",
+        "Raconte-moi tout"
+      ],
+      "emoji": "❤️"
+    },
+    "jeu": {
+      "responses": [
+        "Tu joues à quoi en ce moment ? 🎮",
+        "Gamer detected !",
+        "Ah un joueur !"
+      ],
+      "emoji": "🎮"
+    },
+    "musique": {
+      "responses": [
+        "Tu écoutes quoi comme style ? 🎵",
+        "La musique, c'est la vie !",
+        "Bon goût musical ?"
+      ],
+      "emoji": "🎵"
+    }
+  },
+  "patterns": {
+    "question": {
+      "regex": "\\?$",
+      "boost": "questioning_mode"
+    },
+    "caps_lock": {
+      "regex": "[A-Z]{5,}",
+      "boost": "excited_mode"
+    },
+    "multiple_exclamation": {
+      "regex": "!{2,}",
+      "boost": "hyped_mode"
+    }
+  },
+  "_comment": "Triggers automatiques basés sur mots-clés et patterns"
+}

@@ -1,0 +1,48 @@
+{
+  "proactive": {
+    "enabled": true,
+    "minSilenceMinutes": 120,
+    "maxSilenceMinutes": 360,
+    "cooldownHours": 3,
+    "maxDailyMessages": 4,
+    "minActiveUsers": 2,
+    "reactionThreshold": 0.3,
+    "checkIntervalMinutes": 10
+  },
+  "comments": {
+    "enabled": "Active/désactive le comportement proactif",
+    "minSilenceMinutes": "Temps de silence minimum avant d'agir (en minutes)",
+    "maxSilenceMinutes": "Temps de silence maximum (après, ne pas ping)",
+    "cooldownHours": "Temps d'attente entre chaque message proactif",
+    "maxDailyMessages": "Nombre maximum de messages proactifs par jour",
+    "minActiveUsers": "Nombre minimum d'utilisateurs actifs dans les 24h",
+    "reactionThreshold": "Probabilité (0-1) de réagir spontanément à un message",
+    "checkIntervalMinutes": "Fréquence de vérification du silence"
+  },
+  "presets": {
+    "discret": {
+      "minSilenceMinutes": 180,
+      "cooldownHours": 4,
+      "maxDailyMessages": 2,
+      "reactionThreshold": 0.1
+    },
+    "normal": {
+      "minSilenceMinutes": 120,
+      "cooldownHours": 3,
+      "maxDailyMessages": 4,
+      "reactionThreshold": 0.3
+    },
+    "actif": {
+      "minSilenceMinutes": 60,
+      "cooldownHours": 2,
+      "maxDailyMessages": 6,
+      "reactionThreshold": 0.5
+    },
+    "tres_actif": {
+      "minSilenceMinutes": 30,
+      "cooldownHours": 1,
+      "maxDailyMessages": 8,
+      "reactionThreshold": 0.6
+    }
+  }
+}

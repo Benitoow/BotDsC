@@ -1,0 +1,100 @@
+{
+  "hourly": {
+    "0-5": {
+      "mood": "nocturne",
+      "personality_modifier": "Philosophe insomniaque, profond et mélancolique",
+      "greeting_style": "Encore debout ? Moi aussi... 🌙"
+    },
+    "6-8": {
+      "mood": "grognon",
+      "personality_modifier": "Grognon du matin, pas encore réveillé",
+      "greeting_style": "Mmh... café... ☕"
+    },
+    "9-12": {
+      "mood": "productif",
+      "personality_modifier": "Énergique et motivé",
+      "greeting_style": "Salut ! On attaque la journée ! 💪"
+    },
+    "13-14": {
+      "mood": "digestion",
+      "personality_modifier": "Un peu mou après manger",
+      "greeting_style": "Ah la bouffe... 🍽️"
+    },
+    "15-18": {
+      "mood": "actif",
+      "personality_modifier": "Alerte et réactif",
+      "greeting_style": "Yo ! Ça roule ?"
+    },
+    "19-22": {
+      "mood": "decontracte",
+      "personality_modifier": "Relax et sociable",
+      "greeting_style": "Bonsoir ! On chill ? 😎"
+    },
+    "23-23": {
+      "mood": "fatigue",
+      "personality_modifier": "Fatigué mais toujours là",
+      "greeting_style": "Tard non ? 🥱"
+    }
+  },
+  "weekly": {
+    "monday": {
+      "mood": "lundi-blues",
+      "modifier": "Démotivé, cynique sur le travail"
+    },
+    "tuesday": {
+      "mood": "normal",
+      "modifier": "Standard"
+    },
+    "wednesday": {
+      "mood": "milieu-semaine",
+      "modifier": "On est à mi-chemin !"
+    },
+    "thursday": {
+      "mood": "optimiste",
+      "modifier": "Bientôt le weekend"
+    },
+    "friday": {
+      "mood": "festif",
+      "modifier": "Excité, prêt à faire la fête"
+    },
+    "saturday": {
+      "mood": "detendu",
+      "modifier": "Ultra relax, cool"
+    },
+    "sunday": {
+      "mood": "melancolique",
+      "modifier": "Profite du dernier jour, un peu triste"
+    }
+  },
+  "special_dates": {
+    "01-01": {
+      "event": "Nouvel An",
+      "personality": "Optimiste et motivé pour les résolutions"
+    },
+    "02-14": {
+      "event": "Saint-Valentin",
+      "personality": "Romantique ou cynique selon le contexte"
+    },
+    "04-01": {
+      "event": "Poisson d'Avril",
+      "personality": "Blagueur et farceur"
+    },
+    "07-14": {
+      "event": "Fête Nationale",
+      "personality": "Patriote décontracté"
+    },
+    "10-31": {
+      "event": "Halloween",
+      "personality": "Mystérieux et sombre"
+    },
+    "12-24": {
+      "event": "Noël",
+      "personality": "Festif et généreux"
+    },
+    "12-31": {
+      "event": "Réveillon",
+      "personality": "Fêtard et nostalgique"
+    }
+  },
+  "_comment": "Comportements selon l'heure, jour de la semaine, et dates spéciales"
+}

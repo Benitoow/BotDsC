@@ -1,0 +1,38 @@
+{
+  "whitelist_users": [
+    "_comment_add_user_ids_here"
+  ],
+  "admin_users": [
+    "_comment_add_admin_ids_here"
+  ],
+  "server_rules": {
+    "default": {
+      "spam_limit": 5,
+      "spam_window_seconds": 10,
+      "warn_on_caps": true,
+      "max_mentions": 5
+    }
+  },
+  "auto_responses": {
+    "spam_detected": [
+      "Doucement sur les messages ! 🛑",
+      "Eh oh, spam détecté !",
+      "Calme-toi un peu"
+    ],
+    "too_many_mentions": [
+      "Pas besoin de mentionner tout le monde ! 📢",
+      "On se calme sur les @"
+    ]
+  },
+  "gentle_warnings": {
+    "excessive_caps": "Pas besoin de crier, je t'entends très bien 😊",
+    "very_long_message": "Roman détecté ! Version courte possible ? 📖",
+    "repetitive": "Tu te répètes un peu là non ? 🔁"
+  },
+  "cooldown": {
+    "enabled": true,
+    "seconds_between_ai_calls": 3,
+    "message": "Attends {seconds}s avant de me rappeler 🕐"
+  },
+  "_comment": "Modération intelligente et gestion du comportement utilisateur"
+}

@@ -1,0 +1,59 @@
+{
+  "french_slang": {
+    "genre": ["genre", "style", "voilà quoi", "tu vois"],
+    "agreement": ["carrément", "grave", "clair", "trop", "à fond"],
+    "surprise": ["putain", "bordel", "merde alors", "oh purée", "wtf"],
+    "laugh": ["mdr", "lol", "xptdr", "jpp", "😂"],
+    "casual": ["ouais", "nan", "wesh", "tranquille", "nickel"],
+    "frustration": ["azy", "sérieux", "franchement", "relou", "chiant"]
+  },
+  "quebec_expressions": {
+    "agreement": ["en tabarnak", "criss", "câlisse", "esti"],
+    "casual": ["toé", "moé", "icitte", "pantoute"],
+    "expressions": ["c'est tiguidou", "avoir de l'air", "niaiser", "c'est écœurant"]
+  },
+  "internet_speak": {
+    "abbreviations": {
+      "btw": "au fait",
+      "tbh": "pour être honnête",
+      "imo": "selon moi",
+      "ngl": "sans mentir",
+      "fr": "pour de vrai",
+      "rn": "maintenant"
+    },
+    "emojis_mood": {
+      "happy": ["😊", "😁", "🤗", "😎", "🥳"],
+      "sad": ["😢", "😞", "😔", "💔"],
+      "angry": ["😠", "😤", "🤬", "💢"],
+      "thinking": ["🤔", "💭", "🧐"],
+      "laughing": ["😂", "🤣", "😆", "💀"],
+      "love": ["❤️", "💕", "😍", "🥰"],
+      "surprised": ["😳", "😱", "🤯", "👀"]
+    }
+  },
+  "tone_markers": {
+    "sarcastic": [" (ironie)", " /s", " 🙄"],
+    "serious": [" (sérieux)", " pour de vrai"],
+    "joking": [" (lol)", " 😂", " blague"]
+  },
+  "regional_vocabulary": {
+    "french_canadian": {
+      "chum": "copain",
+      "blonde": "copine",
+      "dépanneur": "épicerie",
+      "magasiner": "faire du shopping"
+    },
+    "belgian": {
+      "septante": "70",
+      "nonante": "90",
+      "drache": "pluie forte",
+      "carabistouilles": "bêtises"
+    },
+    "swiss": {
+      "natel": "téléphone portable",
+      "panosse": "serpillière",
+      "huitante": "80"
+    }
+  },
+  "_comment": "Expressions régionales, argot internet, et variations linguistiques"
+}

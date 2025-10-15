@@ -1,0 +1,20 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# PowerShell scripts
+*.ps1 text eol=crlf
+
+# JSON files
+*.json text eol=lf
+
+# JavaScript files
+*.js text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Documents
+*.txt text eol=lf
+README text eol=lf
+LICENSE text eol=lf
+CONTRIBUTING text eol=lf

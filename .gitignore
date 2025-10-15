@@ -1,0 +1,20 @@
+node_modules/
+.env
+*.log
+.DS_Store
+.vscode/
+dist/
+build/
+
+# Données utilisateur sensibles
+data/smart-memory.json
+data/user-profiles.json
+data/reasoning-cache.json
+data/proactive-data.json
+
+# Fichiers de test et debug
+test-*.js
+test-*.ps1
+check-*.ps1
+monitor-*.ps1
+kill-all.ps1
