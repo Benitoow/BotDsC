@@ -1,0 +1,338 @@
+{
+  "userId": "test_user_123",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Message de test 1",
+      "timestamp": 1760554502229,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 1",
+      "timestamp": 1760554502230,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 2",
+      "timestamp": 1760554502231,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 2",
+      "timestamp": 1760554502232,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 3",
+      "timestamp": 1760554502233,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 3",
+      "timestamp": 1760554502233,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 4",
+      "timestamp": 1760554502234,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 4",
+      "timestamp": 1760554502235,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 5",
+      "timestamp": 1760554502236,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 5",
+      "timestamp": 1760554502237,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 6",
+      "timestamp": 1760554502237,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 6",
+      "timestamp": 1760554502238,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 7",
+      "timestamp": 1760554502240,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 7",
+      "timestamp": 1760554502240,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 8",
+      "timestamp": 1760554502242,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 8",
+      "timestamp": 1760554502243,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 9",
+      "timestamp": 1760554502244,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 9",
+      "timestamp": 1760554502245,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 10",
+      "timestamp": 1760554502246,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 10",
+      "timestamp": 1760554502247,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Je m'appelle Jean",
+      "timestamp": 1760554502252,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "user",
+      "content": "J'ai 25 ans",
+      "timestamp": 1760554502255,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "user",
+      "content": "J'adore le gaming",
+      "timestamp": 1760554502257,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "user",
+      "content": "Message de test 1",
+      "timestamp": 1760554523888,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 1",
+      "timestamp": 1760554523890,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 2",
+      "timestamp": 1760554523891,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 2",
+      "timestamp": 1760554523892,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 3",
+      "timestamp": 1760554523893,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 3",
+      "timestamp": 1760554523894,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 4",
+      "timestamp": 1760554523894,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 4",
+      "timestamp": 1760554523895,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 5",
+      "timestamp": 1760554523896,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 5",
+      "timestamp": 1760554523897,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 6",
+      "timestamp": 1760554523898,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 6",
+      "timestamp": 1760554523899,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 7",
+      "timestamp": 1760554523900,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 7",
+      "timestamp": 1760554523901,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 8",
+      "timestamp": 1760554523902,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 8",
+      "timestamp": 1760554523903,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 9",
+      "timestamp": 1760554523904,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 9",
+      "timestamp": 1760554523905,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Message de test 10",
+      "timestamp": 1760554523906,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Réponse du bot 10",
+      "timestamp": 1760554523907,
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Je m'appelle Jean",
+      "timestamp": 1760554523912,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "user",
+      "content": "J'ai 25 ans",
+      "timestamp": 1760554523915,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    },
+    {
+      "role": "user",
+      "content": "J'adore le gaming",
+      "timestamp": 1760554523917,
+      "metadata": {
+        "userName": "TestUser"
+      }
+    }
+  ],
+  "summaries": [],
+  "keyMoments": [],
+  "totalMessages": 46,
+  "firstMessage": 1760554502229,
+  "lastMessage": 1760554523917
+}

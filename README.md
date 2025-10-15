@@ -2,14 +2,16 @@
 
 # 🤖 Bot Discord IA Avancé
 
-**Bot Discord intelligent avec IA locale (Ollama), système de raisonnement avancé et mémoire contextuelle**
+**Bot Discord intelligent avec IA locale (Ollama), système de raisonnement avancé et mémoire contextuelle massive**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-1.2.0-brightgreen.svg)](https://github.com/Benitoow/BotDsC)
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
 [![Discord.js](https://img.shields.io/badge/Discord.js-14.x-blue.svg)](https://discord.js.org/)
 [![Ollama](https://img.shields.io/badge/Ollama-Mixtral%20%7C%20Mistral-orange.svg)](https://ollama.ai/)
+[![Context](https://img.shields.io/badge/Contexte-32K%20tokens-red.svg)](./MASSIVE-CONTEXT.md)
 
-[Installation](#-installation-rapide) • [Configuration](#%EF%B8%8F-configuration) • [Fonctionnalités](#-fonctionnalités) • [Documentation](#-documentation)
+[Installation](#-installation-rapide) • [Configuration](#%EF%B8%8F-configuration) • [Fonctionnalités](#-fonctionnalités) • [Documentation](#-documentation) • [**🚀 Contexte Massif**](./MASSIVE-CONTEXT.md)
 
 ![Separator](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 

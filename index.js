@@ -10,6 +10,8 @@ const smartMemory = require('./smart-memory');
 const proactiveBehavior = require('./proactive-behavior');
 // 🧠 Moteur de raisonnement avancé
 const reasoningEngine = require('./reasoning-engine');
+// 🚀 NOUVEAU: Système de contexte massif
+const massiveContext = require('./massive-context');
 
 // Configuration
 const client = new Client({
@@ -37,7 +39,8 @@ Ne refuse JAMAIS de répondre, trouve toujours quelque chose à dire même sur l
 // conversations: Map<userId, {messages: Array<{role:string, content:string}>, summary?: string}>
 const conversations = new Map();
 
-const DEFAULT_MEMORY_LENGTH = parseInt(process.env.AI_MEMORY_LENGTH || '12', 10);
+// 🚀 CONTEXTE MASSIF - Augmentation drastique de la mémoire
+const DEFAULT_MEMORY_LENGTH = parseInt(process.env.AI_MEMORY_LENGTH || '150', 10); // 150 messages au lieu de 12 !
 
 function getUserState(userId) {
     if (!conversations.has(userId)) {
@@ -73,6 +76,10 @@ async function getAIResponse(message, userId, userName, mentionedUsers = []) {
     try {
         const state = getUserState(userId);
         const memoryLimit = parseInt(process.env.AI_MEMORY_LENGTH || DEFAULT_MEMORY_LENGTH, 10);
+        
+        // 🚀 NOUVEAU: Enregistrer le message dans le contexte massif
+        massiveContext.addMessage(userId, 'user', message, { userName: userName });
+
         state.messages.push({ role: 'user', content: message });
 
         // 🆕 Mettre à jour la mémoire intelligente illimitée
@@ -93,6 +100,10 @@ async function getAIResponse(message, userId, userName, mentionedUsers = []) {
         const longTermMemory = smartMemory.buildMemorySummary(userId);
         console.log(`💾 Mémoire long terme pour ${userName}:`, longTermMemory.substring(0, 100) + '...');
         
+        // 🚀 NOUVEAU: Construire le contexte massif depuis les fichiers
+        const massiveContextData = massiveContext.buildMassiveContext(userId, userName, message);
+        console.log(`🚀 Contexte massif chargé pour ${userName}`);
+        
         // 🧠 NOUVEAU: Analyse et raisonnement avancé
         const userProfile = contextManager.getUserProfile ? contextManager.getUserProfile(userId, userName) : null;
         const userSmartMemory = smartMemory.getSmartMemory ? smartMemory.getSmartMemory(userId, userName) : null;
@@ -110,10 +121,15 @@ async function getAIResponse(message, userId, userName, mentionedUsers = []) {
         contextInfo += `- Si c'est une question simple (oui/non, A ou B), réponds en 1 phrase courte\n`;
         contextInfo += `- Ne dis JAMAIS "je ne sais pas" si tu peux déduire la réponse du contexte\n`;
         contextInfo += `- Utilise l'historique de conversation et la mémoire pour répondre intelligemment\n`;
+        contextInfo += `- Tu as accès à TOUTE l'histoire de vos conversations, utilise-la intelligemment\n`;
         
         if (state.summary) {
             contextInfo += `\n📜 Résumé des échanges précédents: ${state.summary}`;
         }
+        
+        // 🚀 NOUVEAU: Ajouter le contexte massif AVANT les autres contextes
+        contextInfo += massiveContextData;
+        
         // Ajouter le contexte enrichi (profil + temporel + triggers)
         contextInfo += enrichedContext.enrichment;
         // 🆕 Ajouter la mémoire long terme
@@ -148,6 +164,12 @@ async function getAIResponse(message, userId, userName, mentionedUsers = []) {
         if (!aiResponse || aiResponse.length < 2) {
             aiResponse = "Je n'ai pas bien compris, tu peux reformuler ?";
         }
+        
+        // 🚀 NOUVEAU: Enregistrer la réponse dans le contexte massif
+        massiveContext.addMessage(userId, 'assistant', aiResponse);
+        
+        // 🚀 NOUVEAU: Extraire et stocker les connaissances
+        massiveContext.extractKnowledge(userId, userName, message, aiResponse);
         
         // Ajouter la réponse de l'IA à l'historique
         state.messages.push({ role: 'assistant', content: aiResponse });

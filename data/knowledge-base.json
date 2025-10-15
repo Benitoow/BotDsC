@@ -1,0 +1,26 @@
+{
+  "facts": {
+    "test_user_123_name": {
+      "value": "jean",
+      "timestamp": 1760554523914,
+      "confidence": 1
+    },
+    "test_user_123_age": {
+      "value": "25",
+      "timestamp": 1760554523916,
+      "confidence": 0.9
+    },
+    "test_user_123_likes": {
+      "value": [
+        "J'adore le gaming",
+        "J'adore le gaming"
+      ],
+      "timestamp": 1760554502258,
+      "confidence": 0.8
+    }
+  },
+  "conversations": {},
+  "topics": {},
+  "relationships": {},
+  "lastUpdate": 1760554523918
+}

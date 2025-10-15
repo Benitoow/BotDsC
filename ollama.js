@@ -9,13 +9,14 @@ async function getOllamaResponse(prompt, history = [], isComplexReasoning = fals
         console.log(`🔵 Ollama: Envoi requête au modèle ${MODEL_NAME}...`);
         const startTime = Date.now();
         
-        // 🇫🇷 Paramètres optimisés pour Mixtral (modèle français)
-        // Mixtral est plus intelligent, on peut demander plus de tokens
-        const numPredict = isComplexReasoning ? 200 : 100; // Plus généreux en tokens
+        // 🚀 CONTEXTE MASSIF - Paramètres optimisés pour gérer énormément de contexte
+        // Mixtral 8x7B peut gérer jusqu'à 32K tokens de contexte (≈ 24K mots)
+        const numCtx = parseInt(process.env.OLLAMA_CONTEXT_SIZE) || 32768; // 32K tokens par défaut
+        const numPredict = isComplexReasoning ? 512 : 256; // Réponses plus longues et détaillées
         const temperature = isComplexReasoning ? 0.6 : 0.7; // Légèrement plus créatif
         
         // Format messages for Ollama avec timeout adaptatif (Mixtral est plus lent mais meilleur)
-        // ⚠️ Mixtral peut prendre 30-90s pour répondre, on est TRÈS patient pour la qualité
+        // ⚠️ Avec le contexte massif, Mixtral peut prendre plus de temps
         const timeout = isComplexReasoning ? 300000 : 180000; // 3 minutes simple, 5 minutes complexe
         
         const response = await axios.post(`${OLLAMA_HOST}/api/generate`, {
@@ -23,6 +24,8 @@ async function getOllamaResponse(prompt, history = [], isComplexReasoning = fals
             prompt: prompt,
             stream: false,
             options: {
+                // 🚀 CONTEXTE MASSIF - Paramètres pour gérer énormément de mémoire
+                num_ctx: numCtx,              // 32K tokens de contexte (ÉNORME)
                 temperature: temperature,
                 top_p: 0.9,
                 top_k: 40,
@@ -31,6 +34,9 @@ async function getOllamaResponse(prompt, history = [], isComplexReasoning = fals
                 repeat_penalty: 1.1,      // Évite les répétitions (important en français)
                 presence_penalty: 0.5,    // Favorise la diversité du vocabulaire
                 frequency_penalty: 0.3,   // Réduit les répétitions de mots
+                // 🧠 Paramètres de mémoire et performance
+                num_thread: 8,            // Utilise 8 threads pour la vitesse
+                num_gpu: 99,              // Utilise tous les GPUs disponibles
                 stop: ['\n\n', 'User:', 'Utilisateur:', 'Assistant:', 'Bot:', 'Toi:']
             }
         }, {
